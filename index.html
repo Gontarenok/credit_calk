@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</head>
+<body>
+<div class="main-container flex-container">
+            <div class="flex-container-mini" id="product">
+                    <div class="flex-container"><img src="img/pic_1.png" alt="Foto product" width=70%></div>
+                    <div><span>Солнечная электростанция для дома на 3кВт (11 кВТ*ч/сутки)</span></div>
+
+                    <div>
+                            <ul>
+                                <li>При покупке от 11000 BYN</li>
+                                <li>Без поручителей</li>
+                                <li>Досрочное погашение без переплат</li>
+                            </ul>
+                    </div>
+            </div>
+
+            <div class="flex-container-mini" id="calc">
+                    <div class="flex-container-center">
+                        <div>Ежемесячный платеж: <span class="red_text"><span id="installmentValue">540</span> BYN</span></div>
+                    </div>
+                    <div class="flex-container">
+
+                            <div>Текущая цена: <br><span class="red_text"><span id="pricePr">10000</span> BYN</span></div>
+
+                            <div>Первый взнос: <br><span class="red_text"><span id="firstPrice">300</span> BYN</span></div>
+
+                            <div>Итого при оплате частями: <br><span class="red_text"><span id="fullPrice">200</span> BYN</span></div>
+
+                    </div>
+                    <div class="flex-container-center">
+                        <div>Первый взнос: <br><span class="red_text"><span id="demo">30</span> %</span></div>
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="20" max="40" value="30" step="5" class="slider" id="myRange" list="tickmarks">
+                        <datalist id="tickmarks">
+                            <option value="20" label="20%">
+                            <option value="25" label="25%">
+                            <option value="30" label="30%">
+                            <option value="35" label="35%">
+                            <option value="40" label="40%">
+                        </datalist>
+                    </div>
+
+
+                    <div class="flex-container-center">
+                        <div>Период оплаты: <br><span class="red_text"><span id="demo2"></span> месяцев</span></div>
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="12" max="60" value="48" step="12" class="slider" id="myRange2" list="tickmarks2">
+                        <datalist id="tickmarks2">
+                            <option value="12" label="12">
+                            <option value="24" label="24">
+                            <option value="36" label="36">
+                            <option value="48" label="48">
+                            <option value="60" label="60">
+                        </datalist>
+                    </div>
+
+
+
+                    <div class="flex-container-right">
+                        <button class="red_text" >Оплатить частями</button>
+                    </div>
+
+            </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
